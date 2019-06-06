@@ -23,7 +23,7 @@ WORKDIR /app
 
 COPY package*.json /app/
 
-# Nexus file, if not exists remove this
+# Repository file (example Nexus), if not exists remove this
 COPY .npmrc /root/.npmrc
 
 RUN npm install -g @angular/cli
